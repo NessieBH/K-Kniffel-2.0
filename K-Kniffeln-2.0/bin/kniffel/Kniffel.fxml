@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="647.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kniffel.Controller">
+   <children>
+      <TextField fx:id="dspCurrentDiceResultEinser" alignment="CENTER" editable="false" layoutX="194.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font></TextField>
+      <Button fx:id="runTheDice" contentDisplay="CENTER" layoutX="29.0" layoutY="94.0" mnemonicParsing="false" onAction="#runTheDice" prefHeight="54.0" prefWidth="136.0" text="Würfeln" textFill="#612c83">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="displaySummaryDices" alignment="CENTER" editable="false" layoutX="114.0" layoutY="215.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="keepDice1" layoutX="209.0" layoutY="159.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#actionKeepDice1" prefHeight="44.0" prefWidth="39.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text fontSmoothingType="LCD" layoutX="48.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anzahl Würfe" wrappingWidth="54.99999672174454">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="displayNumberOfThrows" alignment="CENTER" editable="false" layoutX="114.0" layoutY="159.0" prefHeight="44.0" prefWidth="39.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="statusMessage" alignment="CENTER" editable="false" layoutX="25.0" layoutY="795.0" prefHeight="40.0" prefWidth="556.0" stylesheets="@application.css">
+         <font>
+            <Font name="Calibri Bold Italic" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="keepDice3" layoutX="385.0" layoutY="159.0" mnemonicParsing="false" onAction="#actionKeepDice3" prefHeight="44.0" prefWidth="39.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="keepDice2" layoutX="297.0" layoutY="159.0" mnemonicParsing="false" onAction="#actionKeepDice2" prefHeight="44.0" prefWidth="39.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="keepDice4" layoutX="473.0" layoutY="159.0" mnemonicParsing="false" onAction="#actionKeepDice4" prefHeight="44.0" prefWidth="39.0" stylesheets="@application.css">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="keepDice5" layoutX="561.0" layoutY="159.0" mnemonicParsing="false" onAction="#actionKeepDice5" prefHeight="44.0" prefWidth="39.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="newGame" layoutX="404.0" layoutY="26.0" mnemonicParsing="false" onAction="#newGame" prefHeight="34.0" prefWidth="177.0" text="Neues Spiel" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="einser" layoutX="33.0" layoutY="343.0" mnemonicParsing="false" onAction="#einser" prefHeight="30.0" prefWidth="115.0" text="Alle Einser" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <Button fx:id="dreierpasch" layoutX="33.0" layoutY="401.0" mnemonicParsing="false" onAction="#dreierpasch" prefHeight="30.0" prefWidth="115.0" text="3er - Pasch" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="dspCurrentDiceResultDreierpasch" alignment="CENTER" editable="false" layoutX="195.0" layoutY="397.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="chance" layoutX="33.0" layoutY="460.0" mnemonicParsing="false" onAction="#chance" prefHeight="30.0" prefWidth="115.0" text="Chance" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="dspCurrentDiceResultChance" alignment="CENTER" editable="false" layoutX="195.0" layoutY="456.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="fullhouse" layoutX="33.0" layoutY="519.0" mnemonicParsing="false" onAction="#fullhouse" prefHeight="30.0" prefWidth="115.0" text="Full House" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="dspCurrentDiceResultFullhouse" alignment="CENTER" editable="false" layoutX="195.0" layoutY="515.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Text layoutX="48.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Würfel-Summe" wrappingWidth="54.99999824911356">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="kleinestrasse" layoutX="33.0" layoutY="578.0" mnemonicParsing="false" onAction="#kleinestrasse" prefHeight="30.0" prefWidth="115.0" text="Kleine Straße" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="dspCurrentDiceResultKleinestrasse" alignment="CENTER" editable="false" layoutX="195.0" layoutY="574.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="grossestrasse" layoutX="33.0" layoutY="636.0" mnemonicParsing="false" onAction="#grossestrasse" prefHeight="30.0" prefWidth="115.0" text="Große Straße" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="dspCurrentDiceResultGrossestrasse" alignment="CENTER" editable="false" layoutX="195.0" layoutY="632.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="kniffel" layoutX="33.0" layoutY="693.0" mnemonicParsing="false" onAction="#kniffel" prefHeight="30.0" prefWidth="115.0" text="Kniffel" textFill="#f5ffc3">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+      <TextField fx:id="dspCurrentDiceResultKniffel" alignment="CENTER" editable="false" layoutX="195.0" layoutY="689.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="changePlayer" layoutX="59.0" layoutY="276.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#changePlayer" prefHeight="40.0" prefWidth="136.0" text="Spielerwechsel">
+         <font>
+            <Font name="Calibri Bold Italic" size="18.0" />
+         </font></Button>
+      <TextField fx:id="displayPlayerNumber" alignment="CENTER" editable="false" layoutX="209.0" layoutY="276.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="55.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displEinserPlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displEinserPlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displNamePlayer1" alignment="CENTER" layoutX="288.0" layoutY="275.0" prefHeight="40.0" prefWidth="140.0" promptText="Spieler 1">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displNamePlayer2" alignment="CENTER" layoutX="441.0" layoutY="276.0" prefHeight="40.0" prefWidth="140.0" promptText="Spieler 2">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displ3erpaschPlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="398.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displ3erpaschPlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="398.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displChancePlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="457.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displChancePlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="457.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displFullHousePlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="516.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displFullHousePlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="516.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displKlStrPlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="575.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displKlStrPlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="575.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displGrStrPlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="633.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displGrStrPlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="633.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displKniffelPlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="690.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displKniffelPlayer2" alignment="CENTER" editable="false" layoutX="510.0" layoutY="690.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displSumPlayer1" alignment="CENTER" editable="false" layoutX="358.0" layoutY="746.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="displSumPlayer2" alignment="CENTER" editable="false" layoutX="511.0" layoutY="746.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="70.0">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </TextField>
+      <Text fontSmoothingType="LCD" layoutX="274.0" layoutY="771.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summe" wrappingWidth="67.13672080636024">
+         <font>
+            <Font name="Calibri Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="gameInstructions" layoutX="246.0" layoutY="30.0" mnemonicParsing="false" onAction="#gameInstructions" prefHeight="25.0" prefWidth="140.0" text="Spielanleitung">
+         <font>
+            <Font name="Calibri Bold Italic" size="16.0" />
+         </font></Button>
+      <ImageView fx:id="dice1" fitHeight="70.0" fitWidth="82.0" layoutX="188.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dice2" fitHeight="70.0" fitWidth="82.0" layoutX="275.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dice3" fitHeight="70.0" fitWidth="82.0" layoutX="363.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dice4" fitHeight="70.0" fitWidth="82.0" layoutX="452.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dice5" fitHeight="70.0" fitWidth="82.0" layoutX="539.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

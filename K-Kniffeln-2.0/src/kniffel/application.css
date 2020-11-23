@@ -1,0 +1,223 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+ .root {
+	-fx-background-image: url("Hintergrund.jpg");
+}
+
+#newGame{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 50px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color:#F5FFC3;
+}
+
+#runTheDice{
+	-fx-background-color:#F5FFC3;
+	-fx-background-radius: 50px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+
+#dice1{
+	-fx-text-fill: #000000;
+	-fx-border-color: grey;
+	-fx-background-color:#F5FFC3;
+}
+#dice2{
+	-fx-text-fill: #000000;
+	-fx-border-color: grey;
+	-fx-background-color:#F5FFC3;
+}
+#dice3{
+	-fx-text-fill: #000000;
+	-fx-border-color: grey;
+	-fx-background-color:#F5FFC3;
+}
+#dice4{
+	-fx-text-fill: #000000;
+	-fx-border-color: grey;
+	-fx-background-color:#F5FFC3;
+}
+#dice5{
+	-fx-text-fill: #000000;
+	-fx-border-color: grey;
+	-fx-background-color:#F5FFC3;
+}
+
+#keepDice1{
+	-fx-background-image: url(Hold.jpg);
+	
+}
+
+#keepDice2{
+	-fx-background-image: url(Hold.jpg);
+}
+
+#keepDice3{
+	-fx-background-image: url(Hold.jpg);
+}
+
+#keepDice4{
+	-fx-background-image: url(Hold.jpg);
+}
+
+#keepDice5{
+	-fx-background-image: url(Hold.jpg);
+}
+	
+#einser{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+#dreierpasch{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+#chance{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}#fullhouse{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}#kleinestrasse{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}#grossestrasse{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+#kniffel{
+	-fx-background-color:#612C83;
+	-fx-background-radius: 20px;
+	-fx-border-with: 50px;
+	-fx-border-radius: 50px;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+}
+
+#displNamePlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displEinserPlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displ3erpaschPlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displChancePlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displFullHousePlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displKlStrPlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displGrStrPlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displKniffelPlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+#displSumPlayer1{
+	-fx-text-fill: #000000;
+	-fx-background-color:#509AAF;
+}
+
+
+#displNamePlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displEinserPlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displ3erpaschPlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displChancePlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displFullHousePlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displKlStrPlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displGrStrPlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displKniffelPlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+#displSumPlayer2{
+	-fx-text-fill: #000000;
+	-fx-background-color:#7DD8C7;
+}
+
+#dspCurrentDiceResultEinser{
+	-fx-background-color:#F5FFC3;
+}
+#dspCurrentDiceResultDreierpasch{
+	-fx-background-color:#F5FFC3;
+}
+#dspCurrentDiceResultChance{
+	-fx-background-color:#F5FFC3;
+}
+#dspCurrentDiceResultFullhouse{
+	-fx-background-color:#F5FFC3;
+}
+#dspCurrentDiceResultKleinestrasse{
+	-fx-background-color:#F5FFC3;
+}
+#dspCurrentDiceResultGrossestrasse{
+	-fx-background-color:#F5FFC3;
+}
+#dspCurrentDiceResultKniffel{
+	-fx-background-color:#F5FFC3;
+}
+
